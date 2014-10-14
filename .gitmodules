@@ -1,0 +1,6 @@
+[submodule "ElGatoCanHazNYC/Vendor/Quick"]
+	path = ElGatoCanHazNYC/Vendor/Quick
+	url = git@github.com:Quick/Quick.git
+[submodule "ElGatoCanHazNYC/Vendor/Nimble"]
+	path = ElGatoCanHazNYC/Vendor/Nimble
+	url = git@github.com:Quick/Nimble.git
