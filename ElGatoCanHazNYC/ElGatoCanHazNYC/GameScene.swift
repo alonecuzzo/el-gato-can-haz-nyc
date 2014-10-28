@@ -12,6 +12,9 @@ import SpriteKit
 class GameScene: SKScene {
 
     //MARK: props
+    
+    var completion: dispatch_block_t = {}
+    
     var gatoTouch: UITouch?
     var lastUpdateTime: NSTimeInterval?
     var lastFireShotTime: NSTimeInterval = 0.0
@@ -132,21 +135,15 @@ class GameScene: SKScene {
     }
     
     func shootLaser() {
-        //find a random enemy
         enumerateChildNodesWithName(UNICORN_NAME, usingBlock: {
             (unicorn: SKNode!, stop: UnsafeMutablePointer) -> Void in
-            let randomInt = arc4random_uniform(100) + 1
-            let mod = randomInt % 2
-//            if mod == 0 {
-                let laser = SKSpriteNode(imageNamed: "lazer")
-                laser.name = self.LAZER_NAME
-                laser.position = unicorn.position
-                self.addChild(laser)
-                
-                let fly = SKAction.moveByX(-(laser.size.width + self.size.width), y: 0, duration: 1)
-                let flyAndRemove = SKAction.sequence([fly, self.removeAction()])
-                laser.runAction(flyAndRemove)
-//            }
+            let laser = SKSpriteNode(imageNamed: "lazer")
+            laser.name = self.LAZER_NAME
+            laser.position = unicorn.position
+            self.addChild(laser)
+            let fly = SKAction.moveByX(-(laser.size.width + self.size.width), y: 0, duration: 1)
+            let flyAndRemove = SKAction.sequence([fly, self.removeAction()])
+            laser.runAction(flyAndRemove)
         })
     }
     
@@ -201,6 +198,6 @@ class GameScene: SKScene {
     }
     
     func gameOver() {
-        
+       completion()
     }
 }

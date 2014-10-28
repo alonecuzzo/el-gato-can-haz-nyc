@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06251A501A00459700750182 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069CCAAE1A00442100DFB8B3 /* GameOverScene.swift */; };
 		0645C9A719ECA76100904585 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0645C9A619ECA76100904585 /* AppDelegate.swift */; };
 		0645C9A919ECA76100904585 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0645C9A819ECA76100904585 /* GameScene.sks */; };
 		0645C9AB19ECA76100904585 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0645C9AA19ECA76100904585 /* GameScene.swift */; };
@@ -14,6 +15,9 @@
 		0645C9B019ECA76100904585 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0645C9AE19ECA76100904585 /* Main.storyboard */; };
 		0645C9B219ECA76100904585 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0645C9B119ECA76100904585 /* Images.xcassets */; };
 		0645C9B519ECA76100904585 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0645C9B319ECA76100904585 /* LaunchScreen.xib */; };
+		068213E71A003A2B00DEA0D9 /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068213E61A003A2B00DEA0D9 /* MenuScene.swift */; };
+		069CCAAD1A0043EC00DFB8B3 /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068213E61A003A2B00DEA0D9 /* MenuScene.swift */; };
+		069CCAAF1A00442100DFB8B3 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069CCAAE1A00442100DFB8B3 /* GameOverScene.swift */; };
 		06B7AC5A19EDC7090085116F /* QuickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B7AC5919EDC7090085116F /* QuickTests.swift */; };
 		06B7AC7E19EDCB780085116F /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06B7AC7719EDCB530085116F /* Quick.framework */; };
 		06B7AC7F19EDCB7D0085116F /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06B7AC6719EDCB410085116F /* Nimble.framework */; };
@@ -101,6 +105,8 @@
 		0645C9B419ECA76100904585 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		0645C9BA19ECA76100904585 /* ElGatoCanHazNYCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElGatoCanHazNYCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0645C9BF19ECA76100904585 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		068213E61A003A2B00DEA0D9 /* MenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuScene.swift; path = scene/MenuScene.swift; sourceTree = "<group>"; };
+		069CCAAE1A00442100DFB8B3 /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameOverScene.swift; path = scene/GameOverScene.swift; sourceTree = "<group>"; };
 		06B7AC5919EDC7090085116F /* QuickTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickTests.swift; sourceTree = "<group>"; };
 		06B7AC5F19EDCB410085116F /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = Vendor/Nimble/Nimble.xcodeproj; sourceTree = SOURCE_ROOT; };
 		06B7AC6E19EDCB530085116F /* Quick.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quick.xcodeproj; path = Vendor/Quick/Quick/Quick.xcodeproj; sourceTree = SOURCE_ROOT; };
@@ -149,6 +155,7 @@
 		0645C9A319ECA76100904585 /* ElGatoCanHazNYC */ = {
 			isa = PBXGroup;
 			children = (
+				068213DD1A003A1500DEA0D9 /* scene */,
 				06C8555619F43928006A56EE /* playgrounds */,
 				06B7AC3219EDC5170085116F /* sprite */,
 				0645C9A619ECA76100904585 /* AppDelegate.swift */,
@@ -190,6 +197,15 @@
 				0645C9BF19ECA76100904585 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		068213DD1A003A1500DEA0D9 /* scene */ = {
+			isa = PBXGroup;
+			children = (
+				068213E61A003A2B00DEA0D9 /* MenuScene.swift */,
+				069CCAAE1A00442100DFB8B3 /* GameOverScene.swift */,
+			);
+			name = scene;
 			sourceTree = "<group>";
 		};
 		06B7AC3219EDC5170085116F /* sprite */ = {
@@ -415,7 +431,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				069CCAAF1A00442100DFB8B3 /* GameOverScene.swift in Sources */,
 				0645C9AB19ECA76100904585 /* GameScene.swift in Sources */,
+				068213E71A003A2B00DEA0D9 /* MenuScene.swift in Sources */,
 				0645C9AD19ECA76100904585 /* GameViewController.swift in Sources */,
 				0645C9A719ECA76100904585 /* AppDelegate.swift in Sources */,
 			);
@@ -425,6 +443,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06251A501A00459700750182 /* GameOverScene.swift in Sources */,
+				069CCAAD1A0043EC00DFB8B3 /* MenuScene.swift in Sources */,
 				06D0B70919F46C5E009D8ACD /* GameViewController.swift in Sources */,
 				06C8554C19F436D3006A56EE /* GameScene.swift in Sources */,
 				06B7AC5A19EDC7090085116F /* QuickTests.swift in Sources */,
