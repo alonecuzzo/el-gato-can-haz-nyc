@@ -14,11 +14,13 @@
 		0645C9B019ECA76100904585 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0645C9AE19ECA76100904585 /* Main.storyboard */; };
 		0645C9B219ECA76100904585 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0645C9B119ECA76100904585 /* Images.xcassets */; };
 		0645C9B519ECA76100904585 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0645C9B319ECA76100904585 /* LaunchScreen.xib */; };
-		0645C9C119ECA76100904585 /* ElGatoCanHazNYCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0645C9C019ECA76100904585 /* ElGatoCanHazNYCTests.swift */; };
-		06B7AC3119EDC2970085116F /* GatoSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B7AC3019EDC2970085116F /* GatoSprite.swift */; };
 		06B7AC5A19EDC7090085116F /* QuickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B7AC5919EDC7090085116F /* QuickTests.swift */; };
 		06B7AC7E19EDCB780085116F /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06B7AC7719EDCB530085116F /* Quick.framework */; };
 		06B7AC7F19EDCB7D0085116F /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06B7AC6719EDCB410085116F /* Nimble.framework */; };
+		06C8554C19F436D3006A56EE /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0645C9AA19ECA76100904585 /* GameScene.swift */; };
+		06D0B70819F46B8D009D8ACD /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0645C9A819ECA76100904585 /* GameScene.sks */; };
+		06D0B70919F46C5E009D8ACD /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0645C9AC19ECA76100904585 /* GameViewController.swift */; };
+		06F4911119EF2D6A00678016 /* GameSceneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F4911019EF2D6A00678016 /* GameSceneTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,11 +101,11 @@
 		0645C9B419ECA76100904585 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		0645C9BA19ECA76100904585 /* ElGatoCanHazNYCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ElGatoCanHazNYCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0645C9BF19ECA76100904585 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0645C9C019ECA76100904585 /* ElGatoCanHazNYCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElGatoCanHazNYCTests.swift; sourceTree = "<group>"; };
-		06B7AC3019EDC2970085116F /* GatoSprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GatoSprite.swift; path = sprite/GatoSprite.swift; sourceTree = "<group>"; };
 		06B7AC5919EDC7090085116F /* QuickTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickTests.swift; sourceTree = "<group>"; };
 		06B7AC5F19EDCB410085116F /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = Vendor/Nimble/Nimble.xcodeproj; sourceTree = SOURCE_ROOT; };
 		06B7AC6E19EDCB530085116F /* Quick.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quick.xcodeproj; path = Vendor/Quick/Quick/Quick.xcodeproj; sourceTree = SOURCE_ROOT; };
+		06C8555719F4394F006A56EE /* GameScene.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = GameScene.playground; path = playgrounds/GameScene.playground; sourceTree = "<group>"; };
+		06F4911019EF2D6A00678016 /* GameSceneTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameSceneTests.swift; path = scene/GameSceneTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 		0645C9A319ECA76100904585 /* ElGatoCanHazNYC */ = {
 			isa = PBXGroup;
 			children = (
+				06C8555619F43928006A56EE /* playgrounds */,
 				06B7AC3219EDC5170085116F /* sprite */,
 				0645C9A619ECA76100904585 /* AppDelegate.swift */,
 				0645C9A819ECA76100904585 /* GameScene.sks */,
@@ -171,7 +174,8 @@
 		0645C9BD19ECA76100904585 /* ElGatoCanHazNYCTests */ = {
 			isa = PBXGroup;
 			children = (
-				0645C9C019ECA76100904585 /* ElGatoCanHazNYCTests.swift */,
+				06F4910F19EF2D3D00678016 /* scene */,
+				06F4910619EF2D3400678016 /* sprite */,
 				06B7AC5919EDC7090085116F /* QuickTests.swift */,
 				0645C9BE19ECA76100904585 /* Supporting Files */,
 			);
@@ -191,7 +195,6 @@
 		06B7AC3219EDC5170085116F /* sprite */ = {
 			isa = PBXGroup;
 			children = (
-				06B7AC3019EDC2970085116F /* GatoSprite.swift */,
 			);
 			name = sprite;
 			sourceTree = "<group>";
@@ -216,6 +219,29 @@
 				06B7AC7D19EDCB530085116F /* Quick-iOSTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		06C8555619F43928006A56EE /* playgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				06C8555719F4394F006A56EE /* GameScene.playground */,
+			);
+			name = playgrounds;
+			sourceTree = "<group>";
+		};
+		06F4910619EF2D3400678016 /* sprite */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = sprite;
+			sourceTree = "<group>";
+		};
+		06F4910F19EF2D3D00678016 /* scene */ = {
+			isa = PBXGroup;
+			children = (
+				06F4911019EF2D6A00678016 /* GameSceneTests.swift */,
+			);
+			name = scene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,6 +404,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06D0B70819F46B8D009D8ACD /* GameScene.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,7 +416,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0645C9AB19ECA76100904585 /* GameScene.swift in Sources */,
-				06B7AC3119EDC2970085116F /* GatoSprite.swift in Sources */,
 				0645C9AD19ECA76100904585 /* GameViewController.swift in Sources */,
 				0645C9A719ECA76100904585 /* AppDelegate.swift in Sources */,
 			);
@@ -399,8 +425,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0645C9C119ECA76100904585 /* ElGatoCanHazNYCTests.swift in Sources */,
+				06D0B70919F46C5E009D8ACD /* GameViewController.swift in Sources */,
+				06C8554C19F436D3006A56EE /* GameScene.swift in Sources */,
 				06B7AC5A19EDC7090085116F /* QuickTests.swift in Sources */,
+				06F4911119EF2D6A00678016 /* GameSceneTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
